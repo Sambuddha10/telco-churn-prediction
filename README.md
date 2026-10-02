@@ -73,11 +73,11 @@ https://8kylanqcuuyp647dv6f5zb.streamlit.app/
 
 | Item | Value |
 |---|---|
-| Final model | `PASTE YOUR FINAL MODEL NAME` |
-| Classification threshold | `PASTE YOUR SELECTED THRESHOLD` |
-| ROC-AUC | `PASTE YOUR TEST ROC-AUC` |
-| Recall for churn | `PASTE YOUR RECALL` |
-| F1-score for churn | `PASTE YOUR F1 SCORE` |
+| Final model | `XGBOOST` |
+| Classification threshold | `0.40` |
+| ROC-AUC | `0.84` |
+| Recall for churn | `0.78` |
+| F1-score for churn | `0.6136` |
 
 ## Project Structure
 
