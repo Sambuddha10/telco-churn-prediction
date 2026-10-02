@@ -45,3 +45,62 @@ telco-churn-prediction/
 
 IBM Telco Customer Churn dataset from Kaggle:
 https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+## Live Demo
+
+https://8kylanqcuuyp647dv6f5zb.streamlit.app/
+
+## Dashboard Features
+
+- Interactive customer data input form.
+- Real-time churn probability prediction.
+- Custom classification threshold.
+- Churn-risk gauge visualization.
+- Retention recommendation for high-risk customers.
+- Display of the entered customer profile.
+
+## Machine Learning Workflow
+
+1. Cleaned the `TotalCharges` column and handled missing values.
+2. Performed exploratory data analysis of contract type, tenure, charges, payment method, and internet service.
+3. Built a Logistic Regression baseline model.
+4. Compared Logistic Regression, Random Forest, and XGBoost.
+5. Evaluated models with precision, recall, F1-score, ROC-AUC, and confusion matrices.
+6. Tuned the classification threshold based on churn-retention trade-offs.
+7. Used permutation importance and SHAP to interpret churn drivers.
+8. Deployed the final pipeline through Streamlit Community Cloud.
+
+## Results
+
+| Item | Value |
+|---|---|
+| Final model | `PASTE YOUR FINAL MODEL NAME` |
+| Classification threshold | `PASTE YOUR SELECTED THRESHOLD` |
+| ROC-AUC | `PASTE YOUR TEST ROC-AUC` |
+| Recall for churn | `PASTE YOUR RECALL` |
+| F1-score for churn | `PASTE YOUR F1 SCORE` |
+
+## Project Structure
+
+```text
+telco-churn-prediction/
+├── app.py
+├── data/
+│   └── raw/
+│       └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+├── models/
+│   └── telco_churn_model.joblib
+├── notebooks/
+│   └── 01_eda_and_data_cleaning.ipynb
+├── reports/
+│   └── figures/
+├── src/
+├── requirements.txt
+└── README.md
+```
+
+## Limitations
+
+- The dataset represents a fictional telecom company, so results may not transfer directly to a real company.
+- Model predictions show statistical churn risk, not guaranteed behavior.
+- Feature importance identifies association with churn; it does not prove causation.
+- The model should be monitored and retrained when real customer behavior or service plans change.
