@@ -77,7 +77,7 @@ https://8kylanqcuuyp647dv6f5zb.streamlit.app/
 | Classification threshold | `0.40` |
 | ROC-AUC | `0.84` |
 | Recall for churn | `0.78` |
-| F1-score for churn | `0.6136` |
+| F1-score for churn | `0.61` |
 
 ## Project Structure
 
